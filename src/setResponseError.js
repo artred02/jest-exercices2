@@ -25,6 +25,7 @@ export const STATUS_HTTP_MESSAGES = {
   [STATUS_HTTP.NOTFOUND]: 'Erreur: Elément non trouvé',
   [STATUS_HTTP.SERVER_ERROR]:
     'Erreur: Problème technique ! Contacter votre support',
+  [STATUS_API.ERROR]: 'Erreur: Problème technique ! Contacter votre support',
 };
 
 export const setResponseError = ({ response }) => {

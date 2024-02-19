@@ -4,7 +4,7 @@ const API_URL = {
 };
 
 const manageConfig = (apiName, fetchAuthConfig) => {
-  const { headers, ...restFetchAuthConfig } = fetchAuthConfig;
+  const { headers, ...restFetchAuthConfig } = fetchAuthConfig || {};
   return apiName === API_URL.BASE
     ? { headers, ...restFetchAuthConfig }
     : restFetchAuthConfig;
